@@ -42,14 +42,130 @@ main{
     margin: 0;
 }
 
+.details {
+    margin-left: 100px;
+    width: 800px;
+    font-size: 1.6em;
+}
+
+.details h3 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
 .details ul li {
     list-style-type: none;
-    background-size: cover;
-    padding-left: 40px;
-    line-height: 30px;
-    min-height: 30px;
+    margin-left: -40px;
+    margin: 10px;
 }
 
 .details ul li.qr {
-    background: url('qrcode.png') no-repeat center left;
+    display: flex;
+    align-items: center;
+    background: none;
+    padding-left: 0;
+}
+
+.details ul li.qr::before {
+    content: "";
+    background: url('qrcode.png') no-repeat center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.details ul li.wifi {
+    display: flex;
+    align-items: center;
+    background: none;
+    padding-left: 0;
+}
+
+.details ul li.wifi::before {
+    content: "";
+    background: url('wifi.png') no-repeat center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.details ul li.cloud {
+    display: flex;
+    align-items: center;
+    background: none;
+    padding-left: 0;
+}
+
+.details ul li.cloud::before {
+    content: "";
+    background: url('cloud-arrow.png') no-repeat center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.details ul li.photo {
+    display: flex;
+    align-items: center;
+    background: none;
+    padding-left: 0;
+}
+
+.details ul li.photo::before {
+    content: "";
+    background: url('photo.png') no-repeat center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.cta {
+    text-align: center;
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 120px;
+}
+
+.cta form {
+    display: flex;
+    background: white;
+    overflow: hidden;
+    max-width: 500px;
+    width: 100%;
+}
+
+.cta input[type="text"] {
+    flex: 1;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    outline: none;
+}
+
+.cta input[type="button"] {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s;
 }
