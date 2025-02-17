@@ -34,3 +34,22 @@ main{
     text-align: center;
     min-height: 800px;
 }
+
+.hero h2 {
+    font-size: 9em;
+    line-height: 1em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.details ul li {
+    list-style-type: none;
+    background-size: cover;
+    padding-left: 40px;
+    line-height: 30px;
+    min-height: 30px;
+}
+
+.details ul li.qr {
+    background: url('qrcode.png') no-repeat center left;
+}
